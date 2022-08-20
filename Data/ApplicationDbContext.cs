@@ -12,7 +12,5 @@ namespace olcutBelirleme.Data
         {
 
         }
-
-        public virtual DbSet<Unit> Units { get; set; }
     }
 }
