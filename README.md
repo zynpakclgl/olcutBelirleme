@@ -1,2 +1,2 @@
 # olcutBelirleme
-#bilgisayar mühendisleri değerlendirme ölçütleri
+# bilgisayar mühendisleri değerlendirme ölçütleri
