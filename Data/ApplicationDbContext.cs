@@ -10,7 +10,6 @@ namespace olcutBelirleme.Data
     {
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
-
         }
     }
 }
