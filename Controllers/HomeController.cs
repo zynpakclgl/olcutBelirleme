@@ -2,12 +2,8 @@
 using Microsoft.Extensions.Logging;
 using olcutBelirleme.Models;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Globalization;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
+//using System.Web.Mvc;
 
 namespace olcutBelirleme.Controllers
 {
@@ -20,12 +16,35 @@ namespace olcutBelirleme.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
+        public ActionResult Index()
+        {
+            return View();
+        }
+        private static void RastgeleSayi()
+        {
+            Random r = new Random();
+            int sayi = r.Next(100);
+            //Console.WriteLine(sayi);
+        }
+
+        [HttpPost]      
+        public ActionResult Index(string sayi)
+        {
+            RastgeleSayi();
+            
+            return Content("Ortalama Puanınız  %85 !!");
+        }
+       
+
+        /*
         public IActionResult Index()
         {
           
            
             return View();
         }
+       */
 
         public IActionResult Privacy()
         {
